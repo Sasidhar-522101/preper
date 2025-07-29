@@ -1,0 +1,21 @@
+{
+  "name": "preptrack",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm run dev",
+    "start": "node server/server.js",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
